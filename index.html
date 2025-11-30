@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
     <title>Kure Connect</title>
-    <style>
-      body { font-family: Arial; padding: 20px; }
-      h1 { color: #1A8CFF; }
-      button { padding: 15px; background:#1A8CFF; color:white; border:none; border-radius:8px; width:100%; font-size:18px; }
-    </style>
-  </head>
-  <body>
-    <h1>Welcome to Kure Connect</h1>
-    <p>Hybrid ride & product delivery platform in Rwanda.</p>
-    <button onclick="alert('App iratangira kubakwa uyu munsi!')">Start App</button>
-  </body>
+    <link rel="stylesheet" href="app/app.css">
+    <script src="app/app.js"></script>
+</head>
+<body>
+
+<header>Kure Connect</header>
+
+<button onclick="goTo('passenger.html')">Umugenzi | Passenger</button>
+<button onclick="goTo('driver.html')">Utwara | Driver</button>
+<button onclick="goTo('merchant.html')">Umucuruzi | Merchant</button>
+<button onclick="goTo('admin.html')">Admin</button>
+
+<hr style="margin:20px;">
+
+<button onclick="changeLanguage('kiny')">Hindura ururimi: Kinyarwanda</button>
+<button onclick="changeLanguage('eng')">Change Language: English</button>
+
+</body>
 </html>
